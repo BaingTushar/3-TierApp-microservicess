@@ -2,6 +2,7 @@
 logs
 *.log
 npm-debug.log*
+yarn-error.log*
 
 # Runtime data
 pids
@@ -9,23 +10,15 @@ pids
 *.seed
 *.pid.lock
 
-# Directory used by npm
+# Dependencies
 node_modules
-npm-debug.log
-
-# Directory used by yarn
-yarn-error.log
-
-# Optional npm cache directory
 .npm
 
-# Optional eslint cache
+# Cache
 .eslintcache
-
-# Optional REPL history
 .node_repl_history
 
-# IDE / editor directories
+# IDE
 .vscode/
 .idea/
 *.swp
@@ -33,7 +26,22 @@ yarn-error.log
 *.swn
 *.bak
 
-# OS generated files
+# OS files
 .DS_Store
 Thumbs.db
-*.lock
+
+# Git
+.git
+.gitignore
+
+# Docker
+Dockerfile
+docker-compose.yml
+
+# Environment variables
+.env
+
+# Build folders
+dist
+build
+coverage
