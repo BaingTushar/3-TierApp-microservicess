@@ -3,13 +3,10 @@ kind: PersistentVolumeClaim
 metadata:
   name: mongo-volume-claim
   namespace: three-tier
-
 spec:
   accessModes:
     - ReadWriteOnce
-
-  storageClassName: gp2
-
+  storageClassName: manual # Matches the PV above
   resources:
     requests:
       storage: 2Gi
