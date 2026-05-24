@@ -5,7 +5,7 @@ services:
     build: .
     container_name: backend
     ports:
-      - "8080:3500"
+      - "8080:3000"
     environment:
       MONGO_CONN_STR: mongodb://mongodb:27017/mydatabase
     depends_on:
