@@ -10,8 +10,8 @@ connection();
 app.use(express.json());
 app.use(cors());
 
-app.get("/ok", (req, res) => {
-  res.status(200).send("ok");
+app.get("/", (req, res) => {
+  res.send("Backend is running successfully");
 });
 
 app.use("/api/tasks", tasks);
