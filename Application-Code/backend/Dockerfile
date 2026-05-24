@@ -3,16 +3,16 @@ FROM node:14-alpine
 # Create app directory
 WORKDIR /usr/src/app
 
-# Copy dependency files first
+# Copy package files
 COPY package*.json ./
 
-# Install only production dependencies
+# Install dependencies
 RUN npm install --only=production
 
 # Copy source code
 COPY . .
 
-# Expose application port
+# Expose app port
 EXPOSE 3500
 
 # Start application
